@@ -2,6 +2,14 @@
 fun1 <- function(data) {
   # -------Start fun
 
+  # just to calm down R CMD CHECK
+  position <- NULL
+  gender <- NULL
+  n <- NULL
+  M <- NULL
+  term <- NULL
+  p.value <- NULL
+  p_val <- NULL
   # Handle bad input
   assertthat::assert_that(is.data.frame(data))
   assertable::assert_colnames(data, c("position",
@@ -79,6 +87,7 @@ fun1 <- function(data) {
 #' @importFrom dplyr group_by summarise select rename mutate filter arrange
 #' @importFrom assertthat assert_that not_empty
 #' @importFrom assertable assert_colnames
+#' @importFrom tibble tibble
 #' @param data A dataframe of ISU salary data with academic department info. Default is for year 2018. Column names must include 'department', 'position', 'gender', and 'total_salary_paid'. If you want to use aggregated/simplified position categories created by the function 'get_profs', you must change the name of the new column 'XX' to 'position' in order to run it through this function
 #' @return A dataframe of department, nested data, p-value for gender pay gap after accounting for position, and a verdict
 #' @examples
