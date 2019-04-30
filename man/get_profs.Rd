@@ -23,6 +23,6 @@ and emeritus.
 Create a dataframe of professors' salary data
 }
 \examples{
-get_profs()
+get_profs(data)
 
 }

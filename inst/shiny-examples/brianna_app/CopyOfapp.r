@@ -3,12 +3,11 @@ library(shiny)
 require(ggplot2)
 require(dplyr)
 
-#Cysalary <- read.csv("C:/Users/ykh/Desktop/Cysalary.csv")
-Cysalary <- data("all_sals")
+Cysalary <- read.csv("C:/Users/ykh/Desktop/Cysalary.csv")
 
 ui <- fluidPage(
   # App Title
-  titlePanel("Cysalary"),
+  titlePanel("CySalary"),
 
   # Sidebar # - Based on gender
   sidebarPanel(

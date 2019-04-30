@@ -20,7 +20,6 @@ RoxygenNote: 6.1.1
 Depends:
     R (>= 3.1)
 Imports: 
-    curl,
     dplyr,
     tidyr,
     ggplot2,
@@ -28,18 +27,11 @@ Imports:
     magrittr,
     checkmate,
     tibble,
-    data.table,
-    assertable,
-    broom,
-    purrr,
-    assertthat,
-    forcats,
-    lubridate,
-    stringr,
-    digest,
-    shiny
+    data.table
 URL: https://github.com/vanichols/CyChecks
 BugReports: https://github.com/vanichols/CyChecks/issues
 Suggests: 
-    testthat
-
+    testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
